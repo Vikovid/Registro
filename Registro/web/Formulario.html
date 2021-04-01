@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olivares Reyes Víctor"/>
+    <meta name="description" content="Página de para registrarse"/>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Registro</h1>
+            </div>
+        </div>
+    </header>
+                       
+    <section class="banner">
+        <img src="Imagenes/Banner.jpg" alt="" class="banner__img">
+    </section>
+       
+    <main class="main">
+        <section class="group contact">
+           <h2 class="group__tittle">Solicitud de Registro</h2>
+           
+           <div class="container container--flex">
+                <div class="contact-information column column--50">
+                    
+                    <form name="prueba" action="/Registro/Resultado" method="get"><!--Ccambiar urgentemente-->
+                        <fieldset>
+                            <legend>INSTRUCCIONES</legend>
+                            Lee cuidadosamente cada uno de los siguientes campos y llena cada uno de ellos.<br>
+                            Recuerda revisar tus datos una vez concluido, así como verificar que tu información sea verídica.
+			</fieldset>
+                        
+                        <fieldset>
+                            <table>
+                                <tr>
+                                    <td><label>Nombre: </label></td>
+                                    <td><input type="text" name="nombre" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Apellido paterno: </label></td>
+                                    <td><input type="text" name="paterno" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Apellido materno: </label></td>
+                                    <td><input type="text" name="materno" required></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Teléfono: </label>
+                                    </td>
+                                    <td>
+                                        <input type="tel" name="telefono" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Correo electrónico: </label></td>
+                                    <td><input type="email" name="mail" required></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Delegación: </label>
+                                    </td>
+                                    <td>
+                                        <select name="delegacion">
+                                            <option value="0">Azcapotzalco</option>
+                                            <option value="1">Coyoacán</option>
+                                            <option value="2">Cuajimalpa de Morelos</option>
+                                            <option value="3">Gustavo A. Madero</option>
+                                            <option value="4">Iztacalco</option>
+                                            <option value="5">Iztapalapa</option>
+                                            <option value="6">La Magdalena Contreras</option>
+                                            <option value="7">Milpa Alta</option>
+                                            <option value="8">Álvaro Obregón</option>
+                                            <option value="9">Tláhuac</option>
+                                            <option value="10">Tlalpan</option>
+                                            <option value="11">Xochimilco</option>
+                                            <option value="12">Benito Juárez</option>
+                                            <option value="13">Cuauhtémoc</option>
+                                            <option value="14">Miguel Hidalgo</option>
+                                            <option value="15">Venustiano Carranza</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="submit" class=" btn formulario__btn" value="Enviar">
+                                    </td>
+                                </tr>
+                            </table>
+			</fieldset>
+                   </form>
+                </div>
+               
+                <div class="formulario column column--50">
+                    <img src="Imagenes/arbol.jpg" alt="" class="banner__img">
+                </div>
+            </div>
+           
+            </section>
+        </main>
+       
+       <footer class="main-foot">
+            <div class="container container--flex">
+                <div class="column column--50">
+                    <p class="column__txt">Cuida la naturaleza.<br>
+                        Haz conciencia y conviertete en parte importante de ella.</p>
+                </div>
+            
+                <div class="column column--50">
+                    <h2 class="column__tittle">Contáctanos</h2>
+                    <p class="column__txt">ESCOM-IPN, Juan de Dios Bátiz, Av. Miguel Othón de Mendizábal Ote. &, Nueva Industrial Vallejo, Gustavo A. Madero, 07738, CDMX</p>
+                </div>
+            
+                <p class="copy">© 2021 | Todos los derechos reservados</p>
+            </div>   
+       </footer>
+</body>
+</html>
